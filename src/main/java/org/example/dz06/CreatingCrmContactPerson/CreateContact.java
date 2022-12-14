@@ -1,5 +1,6 @@
 package org.example.dz06.CreatingCrmContactPerson;
 
+import io.qameta.allure.Step;
 import org.example.dz06.BaseView;
 import org.example.dz06.CreateExpensePage;
 import org.openqa.selenium.By;
@@ -16,6 +17,7 @@ public class CreateContact extends BaseView {
     @FindBy(xpath = "//a[text()='Создать контактное лицо']")
     public WebElement createContactButton;
 
+    @Step("Создать контактное лицо")
     public PageOfContactCreation allContactCreate() {
         createContactButton.click();
         webDriverWait.until(

@@ -1,5 +1,6 @@
 package org.example.dz06.CreateCrmProjectExample;
 
+import io.qameta.allure.Step;
 import org.example.dz06.BaseView;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ public class AllMenuProjects extends BaseView {
     @FindBy(xpath = "//span[text()='Все проекты']")
     public WebElement allMenuProjectsItem;
 
+    @Step("Перейти на страницу все проекты")
     public void goAllMenuProjects() {
 
         allMenuProjectsItem.click();

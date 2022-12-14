@@ -1,5 +1,6 @@
 package org.example.dz06.CreatingCrmContactPerson;
 
+import io.qameta.allure.Step;
 import org.example.dz06.BaseView;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +16,7 @@ public class MenuContact extends BaseView {
     @FindBy(xpath = "//span[text()='Контактные лица']")
     public WebElement menuContactItem;
 
+    @Step("Перейти на страницу контактные лица")
     public void goMenuContact() {
 
         menuContactItem.click();

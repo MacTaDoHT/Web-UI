@@ -1,5 +1,6 @@
 package org.example.dz06.CreatingCrmContactPerson;
 
+import io.qameta.allure.Step;
 import org.example.dz06.BaseView;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ public class PageOfContactCreation extends BaseView {
     @FindBy(name = "crm_contact[lastName]")
     public WebElement lastName;
 
+    @Step("Заполнить имя")
     public PageOfContactCreation crmLastName(String name) {
         lastName.sendKeys(name);
         return this;
@@ -21,6 +23,7 @@ public class PageOfContactCreation extends BaseView {
     @FindBy(name = "crm_contact[firstName]")
     public WebElement firstName;
 
+    @Step("Заполнить фамилию")
     public PageOfContactCreation crmFirstName(String name) {
         firstName.sendKeys(name);
         return this;
@@ -29,6 +32,7 @@ public class PageOfContactCreation extends BaseView {
     @FindBy(name = "crm_contact[jobTitle]")
     public WebElement jobTitle;
 
+    @Step("Заполнить jobTitle")
     public PageOfContactCreation crmJobTitle(String name) {
         jobTitle.sendKeys(name);
         return this;

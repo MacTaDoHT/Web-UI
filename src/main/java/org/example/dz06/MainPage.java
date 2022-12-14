@@ -2,6 +2,7 @@ package org.example.dz06;
 
 import org.openqa.selenium.WebDriver;
 
+
 public class MainPage extends BaseView {
     public NavigationMenu navigationMenu;
 
