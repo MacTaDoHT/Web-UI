@@ -7,10 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-/**
- * Created by Olga Shestakova
- * Date 06.09.2021
- */
 public class MenuContact extends BaseView {
     public MenuContact(WebDriver driver) {
         super(driver);
